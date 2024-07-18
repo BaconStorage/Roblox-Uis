@@ -2010,7 +2010,7 @@ function library:AddWindow(title, options)
 			end
 		end
 	end
-	return library
+
 	do
 		for i, v in next, Window:GetDescendants() do
 			if hasprop(v, "ZIndex") then
@@ -2023,4 +2023,4 @@ function library:AddWindow(title, options)
 
 
 end
-
+	return library
